@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Science Engagement | Henning Garcia Torrents</title>
+    <style>
+        :root {
+            --primary: #003366; 
+            --accent: #b89c5e; 
+            --text: #2d3436;
+            --bg: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 4rem 1.5rem;
+            text-align: center;
+            border-bottom: 5px solid var(--accent);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -3rem auto 5rem;
+            background: white;
+            padding: 3.5rem;
+            border-radius: 4px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        h1 { margin: 0; font-size: 2.4rem; letter-spacing: -0.5px; }
+        
+        .intro-text {
+            font-size: 1.1rem;
+            text-align: justify;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: #f1f4f8;
+            border-left: 6px solid var(--accent);
+        }
+
+        .work-group {
+            margin-bottom: 2.5rem;
+            padding: 2rem;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .work-group:hover {
+            border-color: var(--accent);
+            background-color: #fffdfa;
+        }
+
+        .checkbox-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+        }
+
+        input[type="checkbox"] {
+            width: 22px;
+            height: 22px;
+            margin-top: 6px;
+            cursor: pointer;
+        }
+
+        label {
+            font-weight: 700;
+            font-size: 1.35rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        .content-details {
+            margin-left: 3rem;
+            margin-top: 1rem;
+            font-size: 1.05rem;
+            color: #4a5568;
+        }
+
+        .form-action {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 2px solid #edf2f7;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        input, input[type="email"] {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: var(--primary);
+            color: white;
+            padding: 1.3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: opacity 0.2s;
+            text-transform: uppercase;
+        }
+
+        button:hover { opacity: 0.9; }
+
+        footer { text-align: center; padding: 4rem 2rem; color: #718096; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Action Engagement & Research Update</h1>
+    <div style="font-size: 1.2rem; margin-top: 10px; opacity: 0.9;">Henning Garcia Torrents | FPU Grantee & Founder of EU BEACON</div>
+</header>
+
+<div class="container">
+    <div class="intro-text">
+        Dear colleagues and peers, I invite you to join this engagement portal as I prepare for my doctoral defense. This is a call for <strong>honest, ongoing work</strong> within the framework of Open Science—a necessary tool to counter the institutional brutality and criminal insanity that currently compromises our societal health and education. We proceed as equals to improve the technologies and methods that ensure ethical governance.
+    </div>
+
+    <form action="/subscribe-engagement" method="POST">
+
+        <!-- 1. Dissertation Presentation -->
+        <div class="work-group">
+            <div class="checkbox-row">
+                <input type="checkbox" id="viva" name="stream" value="viva">
+                <label for="viva">Pre-Viva Presentation & Research Archive</label>
+            </div>
+            <div class="content-details">
+                Access the full <strong>dissertation presentation</strong>, including details of the previous work conducted during my six-year FPU training and the evidence of the "inhuman" factors currently failing our systems. This includes the original survey instrument code for replication and peer review.
+            </div>
+        </div>
+
+        <!-- 2. OSCC Pilot -->
+        <div class="work-group">
+            <div class="checkbox-row">
+                <input type="checkbox" id="oscc" name="stream" value="oscc">
+                <label for="oscc">Open Science Commons Cloud: Pilot & Development</label>
+            </div>
+            <div class="content-details">
+                <em>Project Founder & Chair.</em> Invitation to engage as <strong>pilot test users, beta testers, and developers</strong>. We are building the sovereign digital infrastructure required to enforce radical transparency and stop institutional abuse under Grant <strong>E-COST-GRANT-CA24106-b611a015</strong>.
+            </div>
+        </div>
+
+        <!-- 3. EU BEACON Inclusion -->
+        <div class="work-group">
+            <div class="checkbox-row">
+                <input type="checkbox" id="inclusion" name="stream" value="inclusion">
+                <label for="inclusion">EU BEACON Inclusion Office Working Group</label>
+            </div>
+            <div class="content-details">
+                <em>Action Founder & Inclusion Officer (CA24106).</em> Subscribe for materials on ensuring transdisciplinary One Health education remains a home for the most in need. We work to stop the normalization of brutality by bringing marginalized voices into the global leadership stage.
+            </div>
+        </div>
+
+        <!-- 4. Integrity Defense -->
+        <div class="work-group">
+            <div class="checkbox-row">
+                <input type="checkbox" id="integrity" name="stream" value="integrity">
+                <label for="integrity">Integrity Defense: Reprisals & Moral Witnessing</label>
+            </div>
+            <div class="content-details">
+                Updates on the book, conference, and publications documenting institutional reprisals. This stream provides a platform for peers to resist the lies that hide brutality, transforming hard-earned survival into a legitimate scientific record.
+            </div>
+        </div>
+
+        <!-- 5. EU BEACON Publications -->
+        <div class="work-group">
+            <div class="checkbox-row">
+                <input type="checkbox" id="beacon" name="stream" value="beacon">
+                <label for="beacon">EU BEACON One Health: Roadmaps & Workflows</label>
+            </div>
+            <div class="content-details">
+                Access technical roadmaps and publications from the ongoing Action. This stream focuses on implementing the reasonable actions required for societal prosperity through adaptive convergence across health and education systems.
+            </div>
+        </div>
+
+        <!-- 6. Horizon Consortia -->
+        <div class="work-group">
+            <div class="checkbox-row">
+                <input type="checkbox" id="grants" name="stream" value="grants">
+                <label for="grants">Grants Consortia & Sustainable Excellence</label>
+            </div>
+            <div class="content-details">
+                A collaborative engine for future funding (Horizon Europe, Erasmus+). We invite you to join as equal partners to secure the resources needed to ground this excellence network in long-term, lawful achievement.
+            </div>
+        </div>
+
+        <div class="form-action">
+            <div class="grid">
+                <input type="text" name="name" placeholder="Full Name & Professional Title" required>
+                <input type="email" name="email" placeholder="Institutional Email" required>
+            </div>
+            <input type="text" name="org" placeholder="University / Institution / Organization" style="width: 100%; margin-bottom: 2rem; padding: 15px; border: 1.5px solid #cbd5e0; border-radius: 4px;">
+            <button type="submit">Register for Presentation & Engagement</button>
+        </div>
+    </form>
+</div>
+
+<footer>
+    Henning Garcia Torrents | FPU Grantee (Ministry of Science, Innovation and Universities, Spain) <br>
+    Founder: EU BEACON One Health Action (CA24106) & Open Science Commons Cloud.
+</footer>
+
+</body>
+</html>
